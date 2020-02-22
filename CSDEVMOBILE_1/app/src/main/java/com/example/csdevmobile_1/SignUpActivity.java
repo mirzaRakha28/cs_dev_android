@@ -39,7 +39,7 @@ public class SignUpActivity extends AppCompatActivity {
                 akun.setPassword(name.getText().toString());
                 try{
                     localDatabase.insertAkun(akun);
-                    Toast.makeText(getBaseContext(),"berhasil anjing",Toast.LENGTH_LONG)
+                    Toast.makeText(getBaseContext(),"berhasil terdaftar",Toast.LENGTH_LONG)
                             .show();
                     startActivity(new Intent(SignUpActivity.this,LoginActivity2.class));
                 }catch (Exception e){
